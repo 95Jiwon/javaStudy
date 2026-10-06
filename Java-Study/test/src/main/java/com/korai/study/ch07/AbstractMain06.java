@@ -46,7 +46,7 @@ abstract class RemoteControl {
 class TvRemoteControl extends RemoteControl{
 
     @Override
-    void powerOn (){
+    void powerOn(){
         System.out.println("TV회로에 맞게 전원 공급");
     }
 
