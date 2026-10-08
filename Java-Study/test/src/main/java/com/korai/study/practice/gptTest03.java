@@ -12,8 +12,8 @@ public class gptTest03 {
         int sum = sc.nextInt();
 
         for(int i = 0; i < sum; i++){
-            int result += i;
+//            int result += i;
         }
-        System.out.println(i);
+//        System.out.println(i);
     }
 }

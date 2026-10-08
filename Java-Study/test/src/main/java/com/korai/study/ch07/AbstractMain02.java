@@ -7,8 +7,6 @@ public class AbstractMain02 {
         Animal animal = new Animal();
         Animal animal1 = dog;
         Animal animal2 = tiger;
-
-
     }
 }
 
