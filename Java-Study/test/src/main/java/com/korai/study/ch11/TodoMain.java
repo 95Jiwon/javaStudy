@@ -1,4 +1,4 @@
-package com.korai.study.ch11;
+package main.java.com.korai.study.ch11;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

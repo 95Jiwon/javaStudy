@@ -1,6 +1,8 @@
-package com.korai.study.ch11.Tutorial.View;
+package main.java.com.korai.study.ch11.Tutorial.View;
 
-import com.korai.study.ch11.Tutorial.TodoMain.TodoMain;
+
+
+import main.java.com.korai.study.ch11.Tutorial.TodoMain.TodoMain;
 
 import java.util.Locale;
 import java.util.Scanner;

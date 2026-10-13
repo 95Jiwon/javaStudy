@@ -1,4 +1,4 @@
-package com.korai.study.ch11.Tutorial.View;
+package main.java.com.korai.study.ch11.Tutorial.View;
 
 public class RegisterView implements View{
     private static RegisterView Instance;

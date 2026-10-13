@@ -1,16 +1,20 @@
-package com.korai.study.ch11.Tutorial.View;
+package main.java.com.korai.study.ch11.Tutorial.View;
+
+import main.java.com.korai.study.ch11.Tutorial.Entity.Todo;
+import main.java.com.korai.study.ch11.Tutorial.Repository.TodoRepository;
+import main.java.com.korai.study.ch11.Tutorial.TodoMain.TodoMain;
 
 import java.util.List;
 
-class ListView implements com.korai.study.ch11.View {
-    public static com.korai.study.ch11.ListView instance;
+public class ListView implements View {
+    public static ListView instance;
     private ListView() {
 
     }
 
-    public static com.korai.study.ch11.ListView getInstance() {
+    public static ListView getInstance() {
         while(instance == null){
-            instance = new com.korai.study.ch11.ListView();
+            instance = new ListView();
         }
         return instance;
     }
@@ -18,15 +22,15 @@ class ListView implements com.korai.study.ch11.View {
     @Override
     public void show() {
         System.out.println("[ LIST ]");
-        List<com.korai.study.ch11.Todo> todos = com.korai.study.ch11.TodoRepository.getInstance().findAll();
+        List<Todo> todos = TodoRepository.getInstance().findAll();
         if (todos.size() == 0) {
             System.out.println("등록된 TODO가 없습니다.");
-            com.korai.study.ch11.TodoMain.pathIndex = 0;
+            TodoMain.pathIndex = 0;
             return;
         }
-        for (com.korai.study.ch11.Todo todo : todos) {
+        for (Todo todo : todos) {
             System.out.println(todo);
         }
-        com.korai.study.ch11.TodoMain.pathIndex = 0;
+        TodoMain.pathIndex = 0;
     }
 }
