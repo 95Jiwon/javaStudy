@@ -2,7 +2,7 @@ package main.java.com.korai.study.ch11.Tutorial.TodoMain;
 
 
 
-import com.korai.study.ch11.Tutorial.View.View;
+import main.java.com.korai.study.ch11.Tutorial.View.View;
 import main.java.com.korai.study.ch11.Tutorial.View.HomeView;
 import main.java.com.korai.study.ch11.Tutorial.View.RegisterView;
 import main.java.com.korai.study.ch11.Tutorial.View.ListView;
@@ -19,6 +19,9 @@ public class TodoMain {
             viewList.add((View) HomeView.getInstance());
             viewList.add((View) RegisterView.getInstance());
             viewList.add((View) ListView.getInstance());
-        }
 
+            while(running) {
+                viewList.get(pathIndex).show();
+            }
+        }
 }
